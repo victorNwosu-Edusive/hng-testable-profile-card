@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/hng0.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Testable Profile Card</title>
+  </head>
+  <body>
+    <article data-testid="test-profile-card">
+      <figure>
+        <img
+          data-testid="test-user-avatar"
+          src="./assets/images/profile-image.jpg"
+          alt="User Avatar"
+        />
+      </figure>
+
+      <header>
+        <h2 data-testid="test-user-name">Victor Nwosu</h2>
+        <p data-testid="test-user-bio">
+          Frontend Developer, Tech Enthusiast, and Tech Storyteller who loves
+          turning ideas into interactive experiences and simplifying tech for
+          everyone.
+        </p>
+        <p data-testid="test-user-time" id="time"></p>
+
+        <section>
+          <ul data-testid="test-user-hobbies">
+            <h4>Hobbies</h4>
+            <li>Reading Books</li>
+            <li>Coding</li>
+            <li>Music</li>
+            <li>Journaling</li>
+          </ul>
+
+          <ul data-testid="test-user-dislikes">
+            <h4>Dislikes</h4>
+            <li>Bad internet</li>
+            <li>Noise</li>
+            <li>Bugs</li>
+            <li>Disrespect</li>
+          </ul>
+        </section>
+
+        <nav data-testid="test-user-social-links">
+          <a
+            href="https://github.com/victorNwosu-Edusive"
+            data-testid="test-user-social-github"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-github" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://twitter.com/only_one_victor"
+            data-testid="test-user-social-twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-x-twitter" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/nwosuuvictor"
+            data-testid="test-user-social-instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-instagram" aria-hidden="true"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/victor-nwosu/"
+            data-testid="test-user-social-linkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+          ></a>
+        </nav>
+      </header>
+    </article>
+
+    <script>
+      const timeEl = document.getElementById("time");
+      timeEl.textContent = `Current Time: ${Date.now()} (in ms)`;
+    </script>
+  </body>
+</html>
