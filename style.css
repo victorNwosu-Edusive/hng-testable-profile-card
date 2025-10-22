@@ -132,6 +132,10 @@ nav a:focus{
     border-radius: 20px;
 }
 
+.navigation a:active{
+    background-color: white;
+}
+
 .navigation{
     background-color: rgba(23, 24, 25, 0.884);
     border: 1px solid rgba(67, 66, 66, 0.687);
