@@ -243,16 +243,39 @@ main section{
     gap: 10px;
 }
 
-.contact-page form input, textarea{
+.contact-page form input{
     width: 300px;
-    background-color: rgb(33, 34, 37);
+    background-color: rgb(25, 26, 28);
     outline: none;
     border: none;
     border-radius: 5px;
     padding: 8px;
     color: white;
+    transition: 0.3s ease-in;
 
 }
+
+.contact-page form input:focus{
+    background-color: rgb(33, 34, 37);
+
+}
+
+.contact-page form textarea{
+    background-color: rgb(25, 26, 28);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+    transition: 0.3s ease-in;
+
+}
+
+.contact-page form textarea:focus{
+    background-color: rgb(33, 34, 37);
+
+}
+
 
 form button{
     width: 100%;
@@ -272,6 +295,14 @@ form button:hover{
     transition: 0.3s ease-in-out;
     border: 1px solid white;
 }
+
+form button:focus{
+     background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease-in-out;
+    border: 1px solid white;
+}
+
 
 .contact-page form .form-group{
     display: flex;
