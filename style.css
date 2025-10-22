@@ -240,7 +240,7 @@ main section{
     display: flex;
     flex-direction: column;
     width: 100%;
-    gap: 5px;
+    gap: 10px;
 }
 
 .contact-page form input, textarea{
@@ -332,8 +332,12 @@ form button:hover{
         transform:none;
         position: relative;
         align-items: center;
-        margin: 30px;
+        padding: 20px;
     }
+
+    .contact-page h1{
+    margin-top:0;
+}
 
     .contact-page form input, textarea{
         width: 100%;
