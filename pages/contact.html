@@ -9,6 +9,10 @@
       href="../assets/images/hng1.png"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <title>Contact me  |  HNG stage 1</title>
 </head>
 <body>
@@ -86,18 +90,18 @@
       const message = form.message.value.trim();
 
       if (!name || !email || !subject || !message) {
-        errorMsg.textContent = "All fields are required.";
+        errorMsg.textContent = "⚠ All fields are required.";
         return;
       }
 
       const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
       if (!emailPattern.test(email)) {
-        errorMsg.textContent = "Please enter a valid email address (name@example.com).";
+        errorMsg.textContent = "⚠ Please enter a valid email address (name@example.com).";
         return;
       }
 
       if (message.length < 10) {
-        errorMsg.textContent = "Message must be at least 10 characters.";
+        errorMsg.textContent = "⚠ Message must be at least 10 characters.";
         return;
       }
 
