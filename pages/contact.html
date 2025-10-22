@@ -92,7 +92,7 @@
 
       const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
       if (!emailPattern.test(email)) {
-        errorMsg.textContent = "Please enter a valid email address.";
+        errorMsg.textContent = "Please enter a valid email address (name@example.com).";
         return;
       }
 
